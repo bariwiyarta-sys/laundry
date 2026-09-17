@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom'
+
 export default function Header() {
+  const navigate = useNavigate()
+
   return (
     <header className="fixed top-0 left-72 right-0 h-16 bg-surface-dim/75 backdrop-blur-2xl z-40 px-6 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
       <div className="flex items-center gap-4">
@@ -20,7 +24,10 @@ export default function Header() {
         </div>
       </div>
       <div className="flex items-center gap-4">
-        <button className="h-9 px-4 rounded-xl bg-primary text-on-primary font-semibold text-xs flex items-center gap-1.5 shadow-[0_0_20px_rgba(125,211,252,0.25)] hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all">
+        <button
+          onClick={() => navigate('/kasir')}
+          className="h-9 px-4 rounded-xl bg-primary text-on-primary font-semibold text-xs flex items-center gap-1.5 shadow-[0_0_20px_rgba(125,211,252,0.25)] hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all"
+        >
           <span className="material-symbols-outlined text-[18px]">add</span>
           <span>+ Pesanan Baru</span>
         </button>
