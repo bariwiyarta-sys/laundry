@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#c8a0f0","on-surface":"#e0e8f0","on-secondary-fixed-variant":"#2a4a5e","secondary":"#88b4cc","on-primary":"#001f2e","surface-container-lowest":"#0a0e1a","inverse-surface":"#e0e8f0","on-primary-container":"#c8eaff","on-surface-variant":"#a0b4c4","surface-bright":"#1a2438","on-secondary-container":"#c0d8e8","secondary-container":"#1a3a4e","primary":"#7dd3fc","inverse-on-surface":"#0a0e1a","secondary-fixed-dim":"#88b4cc","on-primary-fixed-variant":"#004d73","on-error-container":"#ffb3b3","outline":"#4a6070","on-error":"#1a0000","on-tertiary-container":"#e8d0ff","secondary-fixed":"#c0d8e8","surface-dim":"#0f1524","tertiary":"#c8a0f0","outline-variant":"#2a3a48","surface-container-highest":"#202c42","on-tertiary-fixed-variant":"#4d2a73","on-secondary":"#001f2e","on-tertiary":"#1a002e","inverse-primary":"#0a4c6e","surface-tint":"#7dd3fc","tertiary-fixed":"#e8d0ff","tertiary-container":"#3d2060","error":"#ff6b6b","background":"#0a0e1a","on-primary-fixed":"#001f2e","surface":"#0f1524","primary-fixed":"#c8eaff","primary-fixed-dim":"#7dd3fc","surface-container-low":"#111828","on-secondary-fixed":"#0d1f2b","surface-variant":"#1a2438","primary-container":"#0e4d6e","surface-container":"#141c2e","on-background":"#e0e8f0","on-tertiary-fixed":"#1a002e","surface-container-high":"#1a2438","error-container":"#3d1414"},"borderRadius":{"DEFAULT":"0.5rem","lg":"1rem","xl":"1.5rem","full":"9999px"},"spacing":{},"fontFamily":{"headline":["Inter"],"display":["Inter"],"body":["Inter"],"label":["Inter"]},"fontSize":{}}}}</script></head><body class="bg-background font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest/80 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-6 flex items-center gap-3 bg-surface-container-low/40 backdrop-blur-xl"><img alt="AuraWash Laundry OS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V-OIR7wBZBwpcjYP2i-I8Ojm_o6kzFrBdXpiBQFlmwyEoKRztTti1PtCe3xzplNfWqriUqb9ZOEOsLLK3GFSqBZaYWHlRZEMkdsvdD8jmHsxdGIcZ7kdZcy0bWxFaV5mXeTOKhvC43BprrPpdAsTSCE5AWWcPpqdgyLERPLhJC2pSe4GGIiJ_lMSCwbkZddGtyGMvstnP1Dm2c3g7aYwFJyBihFe8qQpW4itpCgD50JlQmlKQ7O9pGMw"/><div class="flex flex-col"><span class="text-sm font-headline font-bold tracking-tight text-on-surface leading-tight">AuraWash</span><span class="text-[11px] font-label text-primary tracking-wide font-medium leading-tight">Laundry OS</span></div></div><div class="px-4 py-4"><div class="p-3 rounded-xl bg-surface-container/60 backdrop-blur-md flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><div class="flex flex-col"><span class="text-[10px] uppercase font-label tracking-wider text-on-surface-variant font-semibold">Active Shift</span><span class="text-xs font-medium text-on-surface">Shift Pagi: Budi S.</span></div></div><span class="text-[10px] px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-semibold">LIVE</span></div></div><nav class="flex flex-col gap-1.5 px-3" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-[0_0_20px_rgba(125,211,252,0.15)]"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kasir-pos-pesanan" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Kasir POS &amp; Pesanan</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="operasional-kurir" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Operasional &amp; Kurir</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 transition-all bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-[0_0_20px_rgba(125,211,252,0.15)]" data-path="laporan-keuangan" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Laporan Keuangan</span></a></nav></div><div class="p-4 flex flex-col gap-3"><div class="p-3 rounded-xl bg-surface-container-low/70 backdrop-blur-xl flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[18px]">local_laundry_service</span></div><div class="flex flex-col"><span class="text-xs font-semibold text-on-surface">Mesin Aktif</span><span class="text-[11px] text-on-surface-variant">14 / 16 Siap Pakai</span></div></div><span class="w-2 h-2 rounded-full bg-primary"></span></div><div class="px-2 py-1 text-center"><span class="text-[11px] text-on-surface-variant font-label tracking-tight">© 2024 AuraWash Platform</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-dim/75 backdrop-blur-2xl z-40 px-6 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all cursor-pointer"><span class="material-symbols-outlined text-[18px] text-primary">storefront</span><div class="flex flex-col text-left"><span class="text-xs font-semibold text-on-surface leading-tight">Cabang Utama - Senopati (HQ)</span><span class="text-[10px] text-primary font-medium leading-tight">Ganti Cabang</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant ml-1">expand_more</span></div><div class="relative w-80 lg:w-96"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full h-9 pl-10 pr-4 rounded-xl bg-surface-container-lowest/70 text-xs text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary/40 transition-all" placeholder="Cari No. Nota, Nama Pelanggan, atau No. Resi..." type="text"/></div></div><div class="flex items-center gap-4"><button class="h-9 px-4 rounded-xl bg-primary text-on-primary font-semibold text-xs flex items-center gap-1.5 shadow-[0_0_20px_rgba(125,211,252,0.25)] hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all"><span class="material-symbols-outlined text-[18px]">add</span><span>+ Pesanan Baru</span></button><div class="relative"><button class="w-9 h-9 rounded-xl bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface text-on-surface-variant flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-dim"></span></div><div class="h-6 w-[1px] bg-outline-variant/60"></div><div class="flex items-center gap-2.5 pl-1 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKLr7xmCndgtSaggUrdJukhhawnoNBXizM528-sV3CbrQ4AVD_gtNZLOUc87zkqJsMTf2d7WtMAONjIFkga2ZPNxfkcAScSNEOSkae_Tq3EnwVTIAWnlESKCeV9Euqnm479BbxHmTZKLWADrJ0UsFugcEDP_UCBBjwQvUKF_Aot9vcCJ0NqDfv0CDLcsLG6h5S9LZ02RHdrimfaNIHy2VJlX6fRu4g8IGrpupxmnN9GItPQdshX-BV"/><div class="hidden xl:flex flex-col text-left"><span class="text-xs font-semibold text-on-surface leading-tight">Budi Santoso</span><span class="text-[11px] text-on-surface-variant leading-tight">Outlet Manager</span></div></div></div></header><main class="w-full pt-16 bg-background px-8 min-h-screen"><div class="flex flex-col w-full pb-16 space-y-8">
+<!-- Top Command & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 py-2">
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full text-[10px] font-label font-semibold tracking-wider uppercase bg-primary/10 text-primary">Financial Ledger &amp; Profitability</span>
+<span class="text-xs text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Sinkronisasi Realtime: 2 Menit lalu
+        </span>
+</div>
+<h1 class="text-2xl lg:text-3xl font-headline font-bold text-on-surface tracking-tight">Laporan Keuangan &amp; Operasional</h1>
+</div>
+<!-- Filters & Actions -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Periode Dropdown -->
+<div class="relative inline-flex items-center bg-surface-container/70 backdrop-blur-xl rounded-xl px-3 py-2 text-xs font-medium text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary mr-2">calendar_month</span>
+<select class="bg-transparent text-xs text-on-surface focus:outline-none cursor-pointer pr-4">
+<option class="bg-surface-container text-on-surface" selected="" value="may-2025">Bulan Ini: Mei 2025</option>
+<option class="bg-surface-container text-on-surface" value="apr-2025">April 2025</option>
+<option class="bg-surface-container text-on-surface" value="q1-2025">Kuartal 1 (Q1 2025)</option>
+<option class="bg-surface-container text-on-surface" value="custom">Kustom Rentang Tanggal...</option>
+</select>
+</div>
+<!-- Cabang Selector -->
+<div class="relative inline-flex items-center bg-surface-container/70 backdrop-blur-xl rounded-xl px-3 py-2 text-xs font-medium text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary mr-2">store</span>
+<select class="bg-transparent text-xs text-on-surface focus:outline-none cursor-pointer pr-4">
+<option class="bg-surface-container text-on-surface" selected="" value="senopati">Cabang Senopati (HQ)</option>
+<option class="bg-surface-container text-on-surface" value="kemang">Cabang Kemang</option>
+<option class="bg-surface-container text-on-surface" value="all">Konsolidasi Semua Cabang</option>
+</select>
+</div>
+<!-- Action: Export -->
+<div class="relative group">
+<button class="h-10 px-3.5 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-semibold text-xs flex items-center gap-2 transition-all shadow-sm" id="btn-export">
+<span class="material-symbols-outlined text-[18px] text-primary">download</span>
+<span>Unduh Laporan</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+<div class="hidden absolute right-0 mt-2 w-44 bg-surface-container-highest/95 backdrop-blur-2xl rounded-xl p-1.5 shadow-2xl z-30 flex-col gap-1" id="export-menu">
+<button class="w-full text-left px-3 py-2 text-xs rounded-lg hover:bg-surface-container text-on-surface flex items-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span> Rekap PDF Akuntan
+          </button>
+<button class="w-full text-left px-3 py-2 text-xs rounded-lg hover:bg-surface-container text-on-surface flex items-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-primary">table_view</span> Dataset Excel (.xlsx)
+          </button>
+<button class="w-full text-left px-3 py-2 text-xs rounded-lg hover:bg-surface-container text-on-surface flex items-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[16px] text-tertiary">receipt_long</span> Jurnal Kasir Harian
+          </button>
+</div>
+</div>
+<!-- Action: Catat Pengeluaran -->
+<button class="h-10 px-4 rounded-xl bg-primary text-on-primary font-semibold text-xs flex items-center gap-2 shadow-[0_0_24px_rgba(125,211,252,0.25)] hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all" id="btn-new-expense">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Catat Pengeluaran</span>
+</button>
+</div>
+</div>
+<!-- Primary Financial Summary Cards (Bento Metric Strip) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- Card 1: Omzet Kotor -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container/60 backdrop-blur-xl p-5 shadow-lg flex flex-col justify-between group hover:bg-surface-container/80 transition-all">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-primary/10 rounded-full blur-2xl group-hover:bg-primary/20 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-medium text-on-surface-variant tracking-wide">Total Omzet Kotor (Gross)</span>
+<span class="text-2xl lg:text-3xl font-headline font-bold text-on-surface mt-1">Rp 64.820.000</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-container/60 text-primary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-xs">
+<span class="inline-flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +14.2% MoM
+        </span>
+<span class="text-on-surface-variant text-[11px]">Target: Rp 70.000.000</span>
+</div>
+</div>
+<!-- Card 2: Beban Operasional -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container/60 backdrop-blur-xl p-5 shadow-lg flex flex-col justify-between group hover:bg-surface-container/80 transition-all">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-error/10 rounded-full blur-2xl group-hover:bg-error/20 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-medium text-on-surface-variant tracking-wide">Total Biaya Operasional (OPEX)</span>
+<span class="text-2xl lg:text-3xl font-headline font-bold text-on-surface mt-1">Rp 21.350.000</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container/60 text-error flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[22px]">trending_down</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-xs">
+<span class="inline-flex items-center gap-1 font-medium text-error">
+          Chemical, Listrik, Air &amp; Gaji
+        </span>
+<span class="text-on-surface-variant text-[11px]">32.9% dari Omzet</span>
+</div>
+</div>
+<!-- Card 3: Laba Bersih (Net Profit) -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container/60 backdrop-blur-xl p-5 shadow-lg flex flex-col justify-between group hover:bg-surface-container/80 transition-all">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-tertiary/10 rounded-full blur-2xl group-hover:bg-tertiary/20 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-medium text-on-surface-variant tracking-wide">Laba Bersih Operasional</span>
+<span class="text-2xl lg:text-3xl font-headline font-bold text-primary mt-1">Rp 43.470.000</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/60 text-tertiary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-xs">
+<span class="inline-flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span> Margin Sehat 67.1%
+        </span>
+<span class="text-on-surface-variant text-[11px]">+8.4% vs April</span>
+</div>
+</div>
+<!-- Card 4: Piutang / Pending Bayar -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container/60 backdrop-blur-xl p-5 shadow-lg flex flex-col justify-between group hover:bg-surface-container/80 transition-all">
+<div class="absolute -right-8 -top-8 w-28 h-28 bg-secondary/10 rounded-full blur-2xl group-hover:bg-secondary/20 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-xs font-medium text-on-surface-variant tracking-wide">Piutang / Tagihan Belum Lunas</span>
+<span class="text-2xl lg:text-3xl font-headline font-bold text-secondary-fixed-dim mt-1">Rp 1.450.000</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container/60 text-secondary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-xs">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+          14 Nota Menunggu Pembayaran
+        </span>
+<span class="text-primary text-[11px] font-semibold cursor-pointer hover:underline">Follow Up</span>
+</div>
+</div>
+</div>
+<!-- Analytics & Visual Breakdown Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+<!-- Daily Cashflow Trend (Pendapatan vs Pengeluaran) 2-Cols -->
+<div class="xl:col-span-2 rounded-2xl bg-surface-container/60 backdrop-blur-xl p-6 shadow-xl flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+<div>
+<h2 class="text-base font-headline font-bold text-on-surface">Arus Kas Masuk vs Beban Harian</h2>
+<p class="text-xs text-on-surface-variant">Monitoring kestabilan perputaran kas laundry selama bulan Mei 2025</p>
+</div>
+<div class="flex items-center gap-4 text-xs font-medium">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span class="text-on-surface">Pemasukan (Omzet)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-error"></span>
+<span class="text-on-surface-variant">Beban Pengeluaran</span>
+</div>
+</div>
+</div>
+<!-- Cashflow Inline SVG Vector Chart -->
+<div class="w-full h-56 relative flex items-end pt-4 pb-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 700 200">
+<defs>
+<lineargradient id="incomeGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="expenseGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#ff6b6b" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid guides -->
+<line opacity="0.6" stroke="#2a3a48" stroke-dasharray="4" stroke-width="0.8" x1="0" x2="700" y1="40" y2="40"></line>
+<line opacity="0.6" stroke="#2a3a48" stroke-dasharray="4" stroke-width="0.8" x1="0" x2="700" y1="90" y2="90"></line>
+<line opacity="0.6" stroke="#2a3a48" stroke-dasharray="4" stroke-width="0.8" x1="0" x2="700" y1="140" y2="140"></line>
+<!-- Expense Fill & Line -->
+<path d="M 0 160 Q 50 145, 100 150 T 200 135 T 300 110 T 400 155 T 500 140 T 600 120 T 700 130 L 700 200 L 0 200 Z" fill="url(#expenseGrad)"></path>
+<path d="M 0 160 Q 50 145, 100 150 T 200 135 T 300 110 T 400 155 T 500 140 T 600 120 T 700 130" fill="none" stroke="#ff6b6b" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Income Fill & Line -->
+<path d="M 0 130 Q 50 100, 100 85 T 200 70 T 300 45 T 400 75 T 500 50 T 600 35 T 700 30 L 700 200 L 0 200 Z" fill="url(#incomeGrad)"></path>
+<path d="M 0 130 Q 50 100, 100 85 T 200 70 T 300 45 T 400 75 T 500 50 T 600 35 T 700 30" fill="none" stroke="#7dd3fc" stroke-linecap="round" stroke-width="3"></path>
+<!-- Highlight Nodes -->
+<circle class="shadow-lg" cx="300" cy="45" fill="#7dd3fc" r="4.5"></circle>
+<circle cx="600" cy="35" fill="#7dd3fc" r="4.5"></circle>
+<circle cx="300" cy="110" fill="#ff6b6b" r="4"></circle>
+</svg>
+</div>
+<!-- X-Axis Timeline Labels -->
+<div class="flex justify-between text-[11px] font-label text-on-surface-variant pt-2">
+<span>01 Mei</span>
+<span>06 Mei</span>
+<span>11 Mei</span>
+<span>16 Mei</span>
+<span>21 Mei</span>
+<span>26 Mei</span>
+<span>31 Mei</span>
+</div>
+<!-- Summary Insight Footer -->
+<div class="mt-4 pt-3 flex flex-wrap items-center justify-between gap-2 bg-surface-container-high/40 rounded-xl px-4 py-2 text-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">insights</span>
+<span class="text-on-surface">Puncak omzet tercapai pada <strong>Minggu, 25 Mei (Rp 3.840.000)</strong> akibat lonjakan drop-off bedcover akhir pekan.</span>
+</div>
+<span class="text-[11px] text-on-surface-variant">Rata-rata Harian: Rp 2.090.000 / hari</span>
+</div>
+</div>
+<!-- Payment Channels Distribution -->
+<div class="rounded-2xl bg-surface-container/60 backdrop-blur-xl p-6 shadow-xl flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<div>
+<h2 class="text-base font-headline font-bold text-on-surface">Metode Pembayaran</h2>
+<p class="text-xs text-on-surface-variant">Split settlement pelanggan Mei 2025</p>
+</div>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-surface-container-highest text-primary">QRIS Dominan</span>
+</div>
+<!-- Visual Donut Chart Simulation -->
+<div class="flex items-center justify-center my-3 relative">
+<svg class="w-40 h-40 transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background ring -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#1a2438" stroke-width="12"></circle>
+<!-- QRIS 54% -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#7dd3fc" stroke-dasharray="135.7 251.2" stroke-dashoffset="0" stroke-linecap="round" stroke-width="12"></circle>
+<!-- Cash 26% -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#88b4cc" stroke-dasharray="65.3 251.2" stroke-dashoffset="-135.7" stroke-width="12"></circle>
+<!-- Transfer 15% -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#c8a0f0" stroke-dasharray="37.6 251.2" stroke-dashoffset="-201" stroke-width="12"></circle>
+<!-- E-Wallet 5% -->
+<circle cx="50" cy="50" fill="none" r="40" stroke="#0e4d6e" stroke-dasharray="12.5 251.2" stroke-dashoffset="-238.6" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="text-xs text-on-surface-variant uppercase tracking-wider font-label">Total Transaksi</span>
+<span class="text-xl font-headline font-bold text-on-surface">1.240</span>
+<span class="text-[10px] text-primary">Pesanan</span>
+</div>
+</div>
+<!-- Legend & Values -->
+<div class="space-y-2 text-xs">
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low/60">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">QRIS Dinamis &amp; Statis</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-on-surface font-semibold">Rp 35.002.800</span>
+<span class="text-[11px] text-primary font-bold w-9 text-right">54%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low/60">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium">Tunai Kasir (Cash POS)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-on-surface font-semibold">Rp 16.853.200</span>
+<span class="text-[11px] text-secondary font-bold w-9 text-right">26%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low/60">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="text-on-surface font-medium">Transfer Bank (BCA/Mandiri)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-on-surface font-semibold">Rp 9.723.000</span>
+<span class="text-[11px] text-tertiary font-bold w-9 text-right">15%</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-low/60">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="text-on-surface font-medium">OVO, GoPay, ShopeePay</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-on-surface font-semibold">Rp 3.241.000</span>
+<span class="text-[11px] text-on-surface-variant font-bold w-9 text-right">5%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Expense Tracker (Detailed Ledger Table) -->
+<div class="rounded-2xl bg-surface-container/60 backdrop-blur-xl p-6 shadow-xl flex flex-col space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h2 class="text-lg font-headline font-bold text-on-surface">Buku Kas Pengeluaran Operasional (Expense Tracker)</h2>
+<p class="text-xs text-on-surface-variant">Rekam detail belanja bahan deterjen, pemeliharaan mesin washer/dryer, utilitas, dan kurir</p>
+</div>
+<!-- Table Filter Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-semibold transition-all">Semua Biaya</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-all">Chemical/Deterjen</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-all">Listrik &amp; Air</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-all">Servis Mesin</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface-variant hover:text-on-surface transition-all">Kurir &amp; BBM</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto rounded-xl">
+<table class="w-full text-left text-xs">
+<thead>
+<tr class="bg-surface-container-high/80 text-on-surface-variant uppercase tracking-wider font-label text-[11px]">
+<th class="py-3 px-4 rounded-l-lg">Tanggal</th>
+<th class="py-3 px-4">Kategori Pengeluaran</th>
+<th class="py-3 px-4">Keterangan / Item</th>
+<th class="py-3 px-4 text-right">Jumlah (IDR)</th>
+<th class="py-3 px-4 text-center">Bukti Nota</th>
+<th class="py-3 px-4">Dicatat Oleh</th>
+<th class="py-3 px-4 text-center rounded-r-lg">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-1 text-on-surface font-body">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-mono text-[11px] text-on-surface-variant">28 Mei 2025<br/><span class="text-[10px]">10:14 WIB</span></td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-medium bg-primary-container/40 text-primary">
+<span class="material-symbols-outlined text-[14px]">local_drink</span> Bahan Baku / Sabun
+              </span>
+</td>
+<td class="py-3 px-4">
+<span class="font-semibold text-on-surface">Deterjen Liquid Konsentrat 50 Liter (Grade A Anti Bakteri)</span>
+<p class="text-[11px] text-on-surface-variant">Supplier: PT Kimia Laundry Bersih Abadi</p>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">
+              Rp 1.250.000
+            </td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-[11px] text-primary transition-all">
+<span class="material-symbols-outlined text-[14px]">receipt</span> INV-9821
+              </button>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-bright flex items-center justify-center text-[10px] font-bold text-primary">BS</div>
+<span>Budi Santoso</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-mono text-[11px] text-on-surface-variant">25 Mei 2025<br/><span class="text-[10px]">15:30 WIB</span></td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-medium bg-secondary-container/50 text-secondary">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Utilitas Listrik/Air
+              </span>
+</td>
+<td class="py-3 px-4">
+<span class="font-semibold text-on-surface">Token Listrik Workshop 3 Phase (Daya 16.500 VA)</span>
+<p class="text-[11px] text-on-surface-variant">PLN Prepaid ID Pelanggan: 5412-8823-1120</p>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">
+              Rp 3.500.000
+            </td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-[11px] text-primary transition-all">
+<span class="material-symbols-outlined text-[14px]">receipt</span> PLN-5510
+              </button>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-bright flex items-center justify-center text-[10px] font-bold text-tertiary">DA</div>
+<span>Dewi Anggraeni</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-mono text-[11px] text-on-surface-variant">22 Mei 2025<br/><span class="text-[10px]">11:20 WIB</span></td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-medium bg-tertiary-container/50 text-tertiary">
+<span class="material-symbols-outlined text-[14px]">build</span> Maintenance Mesin
+              </span>
+</td>
+<td class="py-3 px-4">
+<span class="font-semibold text-on-surface">Servis Berkala Dryer Speed Queen #2 (Ganti V-Belt &amp; Sensor Suhu)</span>
+<p class="text-[11px] text-on-surface-variant">Vendor: Sentra Teknik Laundry Jakarta</p>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">
+              Rp 450.000
+            </td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-[11px] text-primary transition-all">
+<span class="material-symbols-outlined text-[14px]">receipt</span> SRV-0419
+              </button>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-bright flex items-center justify-center text-[10px] font-bold text-primary">BS</div>
+<span>Budi Santoso</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-mono text-[11px] text-on-surface-variant">19 Mei 2025<br/><span class="text-[10px]">17:45 WIB</span></td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-medium bg-secondary-container/40 text-secondary-fixed-dim">
+<span class="material-symbols-outlined text-[14px]">two_wheeler</span> Operasional Kurir / BBM
+              </span>
+</td>
+<td class="py-3 px-4">
+<span class="font-semibold text-on-surface">Klaim BBM Motor Operasional Pick Up &amp; Delivery (2 Armada)</span>
+<p class="text-[11px] text-on-surface-variant">Periode Minggu ke-3: Total Jarak Tempuh 420 KM</p>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">
+              Rp 280.000
+            </td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-[11px] text-primary transition-all">
+<span class="material-symbols-outlined text-[14px]">receipt</span> STR-881
+              </button>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-bright flex items-center justify-center text-[10px] font-bold text-on-surface-variant">RA</div>
+<span>Rian Ardiansyah</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-mono text-[11px] text-on-surface-variant">15 Mei 2025<br/><span class="text-[10px]">09:00 WIB</span></td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-medium bg-primary-container/40 text-primary">
+<span class="material-symbols-outlined text-[14px]">shopping_bag</span> Plastik Packing &amp; Hanger
+              </span>
+</td>
+<td class="py-3 px-4">
+<span class="font-semibold text-on-surface">Plastik Jinjing HD Sablon Logo AuraWash 5 Pack + 200 Gantungan Baju Kawat</span>
+<p class="text-[11px] text-on-surface-variant">Toko Packaging Makmur</p>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">
+              Rp 670.000
+            </td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-[11px] text-primary transition-all">
+<span class="material-symbols-outlined text-[14px]">receipt</span> NOTA-1102
+              </button>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-bright flex items-center justify-center text-[10px] font-bold text-primary">BS</div>
+<span>Budi Santoso</span>
+</div>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="p-1.5 rounded-lg hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Counter -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2 text-xs text-on-surface-variant">
+<span>Menampilkan <strong>5</strong> dari <strong>38</strong> entri pengeluaran bulan ini</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all disabled:opacity-50" disabled="">Sebelumnya</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-semibold">1</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all">2</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all">3</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all">Selanjutnya</button>
+</div>
+</div>
+</div>
+<!-- Service Performance Breakdown (Layanan Kontribusi Omzet & Volume) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Performance Table 2-Cols -->
+<div class="lg:col-span-2 rounded-2xl bg-surface-container/60 backdrop-blur-xl p-6 shadow-xl flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="text-base font-headline font-bold text-on-surface">Kinerja Omzet Berdasarkan Kategori Layanan</h2>
+<p class="text-xs text-on-surface-variant">Evaluasi kuantitas (Kg/Pcs) dan efektivitas pricing layanan AuraWash</p>
+</div>
+<span class="text-xs text-primary font-medium">Bulan Berjalan</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs">
+<thead>
+<tr class="bg-surface-container-high/80 text-on-surface-variant uppercase tracking-wider font-label text-[11px]">
+<th class="py-2.5 px-4 rounded-l-lg">Layanan</th>
+<th class="py-2.5 px-4 text-center">Jumlah Nota</th>
+<th class="py-2.5 px-4 text-center">Volume Total</th>
+<th class="py-2.5 px-4 text-right">Omzet Masuk</th>
+<th class="py-2.5 px-4 rounded-r-lg">Pangsa (%)</th>
+</tr>
+</thead>
+<tbody class="space-y-1">
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                Cuci Kiloan Reguler (2 Hari)
+              </td>
+<td class="py-3 px-4 text-center font-mono">612 Order</td>
+<td class="py-3 px-4 text-center font-mono text-on-surface">3.672 Kg</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">Rp 25.704.000</td>
+<td class="py-3 px-4">
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 39.6%"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                Express Wash &amp; Dry (6 - 12 Jam)
+              </td>
+<td class="py-3 px-4 text-center font-mono">310 Order</td>
+<td class="py-3 px-4 text-center font-mono text-on-surface">1.240 Kg</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">Rp 17.360.000</td>
+<td class="py-3 px-4">
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 26.8%"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+                Satuan: Bedcover &amp; Selimut Tebal
+              </td>
+<td class="py-3 px-4 text-center font-mono">185 Order</td>
+<td class="py-3 px-4 text-center font-mono text-on-surface">246 Pcs</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">Rp 9.840.000</td>
+<td class="py-3 px-4">
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 15.2%"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed"></span>
+                Shoes &amp; Leather Bag Care
+              </td>
+<td class="py-3 px-4 text-center font-mono">88 Order</td>
+<td class="py-3 px-4 text-center font-mono text-on-surface">114 Pasang</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">Rp 6.840.000</td>
+<td class="py-3 px-4">
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-fixed h-full rounded-full" style="width: 10.5%"></div>
+</div>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-on-surface-variant"></span>
+                Dry Clean Premium (Jas &amp; Gaun)
+              </td>
+<td class="py-3 px-4 text-center font-mono">45 Order</td>
+<td class="py-3 px-4 text-center font-mono text-on-surface">82 Pcs</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-on-surface">Rp 5.076.000</td>
+<td class="py-3 px-4">
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-on-surface-variant h-full rounded-full" style="width: 7.9%"></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Machine & Operational Health Summary Card -->
+<div class="rounded-2xl bg-surface-container/60 backdrop-blur-xl p-6 shadow-xl flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<h3 class="text-base font-headline font-bold text-on-surface">Efisiensi Konsumsi Daya</h3>
+<span class="material-symbols-outlined text-secondary text-[20px]">speed</span>
+</div>
+<div class="space-y-4 my-2">
+<div class="p-3.5 rounded-xl bg-surface-container-low/80 flex flex-col gap-2">
+<div class="flex justify-between text-xs">
+<span class="text-on-surface-variant">Rata-rata Biaya per Kg Pakaian:</span>
+<span class="font-mono font-bold text-primary">Rp 4.340 / Kg</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 45%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant">Benchmark efisiensi industri: &lt; Rp 5.000/Kg (Sangat Efisien)</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low/80 flex flex-col gap-2">
+<div class="flex justify-between text-xs">
+<span class="text-on-surface-variant">Rasio Air Bersih Digunakan:</span>
+<span class="font-mono font-bold text-secondary">18.4 Liter / Kg</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 60%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant">Hemat 22% berkat mesin inverter seri komersial</p>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low/80 flex flex-col gap-2">
+<div class="flex justify-between text-xs">
+<span class="text-on-surface-variant">Beban Gaji Karyawan Outlet:</span>
+<span class="font-mono font-bold text-on-surface">Rp 12.000.000 (3 Operator)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 18.5%"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant">Terhitung 18.5% dari seluruh total omzet Mei</p>
+</div>
+</div>
+<div class="pt-3 flex items-center justify-between text-xs">
+<span class="text-on-surface-variant text-[11px]">Audit Pembukuan Internal</span>
+<button class="text-primary font-semibold hover:underline flex items-center gap-1">
+<span>Lihat Laba Rugi P&amp;L</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Add Expense Modal / Sliding Dialog -->
+<div class="fixed inset-0 bg-surface-container-lowest/80 backdrop-blur-md z-50 hidden items-center justify-center p-4" id="modal-expense">
+<div class="bg-surface-container-high border-0 rounded-2xl p-6 max-w-lg w-full shadow-2xl space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">receipt_long</span>
+<h3 class="text-base font-headline font-bold text-on-surface">Catat Pengeluaran Operasional Baru</h3>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-bright text-on-surface-variant hover:text-on-surface" id="btn-close-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="space-y-3.5 text-xs" id="form-expense">
+<div>
+<label class="block text-on-surface-variant mb-1">Tanggal Transaksi</label>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" type="date" value="2025-05-29"/>
+</div>
+<div>
+<label class="block text-on-surface-variant mb-1">Kategori Biaya</label>
+<select class="w-full h-10 px-3 rounded-xl bg-surface-container text-on-surface focus:outline-none focus:ring-1 focus:ring-primary">
+<option>Bahan Baku / Deterjen &amp; Parfum</option>
+<option>Utilitas Listrik / Air PDAM</option>
+<option>Maintenance &amp; Servis Mesin</option>
+<option>Operasional Kurir &amp; BBM</option>
+<option>Packaging &amp; Perlengkapan Kasir</option>
+<option>Gaji, Uang Makan &amp; Bonus Karyawan</option>
+<option>Lain-lain / Tak Terduga</option>
+</select>
+</div>
+<div>
+<label class="block text-on-surface-variant mb-1">Keterangan Item / Keperluan</label>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Contoh: Beli Pewangi Blue Ocean 20L" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-on-surface-variant mb-1">Nominal (IDR)</label>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary font-mono" placeholder="Rp 0" type="number"/>
+</div>
+<div>
+<label class="block text-on-surface-variant mb-1">Metode Bayar Kas</label>
+<select class="w-full h-10 px-3 rounded-xl bg-surface-container text-on-surface focus:outline-none focus:ring-1 focus:ring-primary">
+<option>Kas Kecil Kasir (Petty Cash)</option>
+<option>Rekening Operasional (BCA)</option>
+<option>Talangan Pribadi Karyawan</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-on-surface-variant mb-1">Unggah Bukti / Struk / Nota (Opsional)</label>
+<div class="w-full p-4 rounded-xl bg-surface-container flex flex-col items-center justify-center gap-1.5 cursor-pointer hover:bg-surface-bright transition-colors text-center">
+<span class="material-symbols-outlined text-primary text-[24px]">cloud_upload</span>
+<span class="text-[11px] text-on-surface font-medium">Klik untuk upload foto nota atau PDF</span>
+<span class="text-[10px] text-on-surface-variant">Maksimal 5MB (JPG, PNG, PDF)</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2.5 pt-3">
+<button class="px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-bright text-on-surface font-medium transition-all" id="btn-cancel-expense" type="button">Batal</button>
+<button class="px-5 py-2 rounded-xl bg-primary text-on-primary font-semibold shadow-md hover:bg-primary-fixed-dim transition-all" type="submit">Simpan Pengeluaran</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for modal and dropdowns
+  const btnExport = document.getElementById('btn-export');
+  const exportMenu = document.getElementById('export-menu');
+  const btnNewExpense = document.getElementById('btn-new-expense');
+  const modalExpense = document.getElementById('modal-expense');
+  const btnCloseModal = document.getElementById('btn-close-modal');
+  const btnCancelExpense = document.getElementById('btn-cancel-expense');
+  const formExpense = document.getElementById('form-expense');
+
+  if (btnExport && exportMenu) {
+    btnExport.addEventListener('click', (e) => {
+      e.stopPropagation();
+      exportMenu.classList.toggle('hidden');
+      exportMenu.classList.toggle('flex');
+    });
+
+    document.addEventListener('click', () => {
+      if (!exportMenu.classList.contains('hidden')) {
+        exportMenu.classList.add('hidden');
+        exportMenu.classList.remove('flex');
+      }
+    });
+  }
+
+  function openExpenseModal() {
+    if (modalExpense) {
+      modalExpense.classList.remove('hidden');
+      modalExpense.classList.add('flex');
+    }
+  }
+
+  function closeExpenseModal() {
+    if (modalExpense) {
+      modalExpense.classList.add('hidden');
+      modalExpense.classList.remove('flex');
+    }
+  }
+
+  if (btnNewExpense) btnNewExpense.addEventListener('click', openExpenseModal);
+  if (btnCloseModal) btnCloseModal.addEventListener('click', closeExpenseModal);
+  if (btnCancelExpense) btnCancelExpense.addEventListener('click', closeExpenseModal);
+
+  if (formExpense) {
+    formExpense.addEventListener('submit', (e) => {
+      e.preventDefault();
+      closeExpenseModal();
+    });
+  }
+</script></main></div></body></html>

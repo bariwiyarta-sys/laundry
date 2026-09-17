@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#c8a0f0","on-surface":"#e0e8f0","on-secondary-fixed-variant":"#2a4a5e","secondary":"#88b4cc","on-primary":"#001f2e","surface-container-lowest":"#0a0e1a","inverse-surface":"#e0e8f0","on-primary-container":"#c8eaff","on-surface-variant":"#a0b4c4","surface-bright":"#1a2438","on-secondary-container":"#c0d8e8","secondary-container":"#1a3a4e","primary":"#7dd3fc","inverse-on-surface":"#0a0e1a","secondary-fixed-dim":"#88b4cc","on-primary-fixed-variant":"#004d73","on-error-container":"#ffb3b3","outline":"#4a6070","on-error":"#1a0000","on-tertiary-container":"#e8d0ff","secondary-fixed":"#c0d8e8","surface-dim":"#0f1524","tertiary":"#c8a0f0","outline-variant":"#2a3a48","surface-container-highest":"#202c42","on-tertiary-fixed-variant":"#4d2a73","on-secondary":"#001f2e","on-tertiary":"#1a002e","inverse-primary":"#0a4c6e","surface-tint":"#7dd3fc","tertiary-fixed":"#e8d0ff","tertiary-container":"#3d2060","error":"#ff6b6b","background":"#0a0e1a","on-primary-fixed":"#001f2e","surface":"#0f1524","primary-fixed":"#c8eaff","primary-fixed-dim":"#7dd3fc","surface-container-low":"#111828","on-secondary-fixed":"#0d1f2b","surface-variant":"#1a2438","primary-container":"#0e4d6e","surface-container":"#141c2e","on-background":"#e0e8f0","on-tertiary-fixed":"#1a002e","surface-container-high":"#1a2438","error-container":"#3d1414"},"borderRadius":{"DEFAULT":"0.5rem","lg":"1rem","xl":"1.5rem","full":"9999px"},"spacing":{},"fontFamily":{"headline":["Inter"],"display":["Inter"],"body":["Inter"],"label":["Inter"]},"fontSize":{}}}}</script></head><body class="bg-background font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest/80 backdrop-blur-2xl z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-6 flex items-center gap-3 bg-surface-container-low/40 backdrop-blur-xl"><img alt="AuraWash Laundry OS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V-OIR7wBZBwpcjYP2i-I8Ojm_o6kzFrBdXpiBQFlmwyEoKRztTti1PtCe3xzplNfWqriUqb9ZOEOsLLK3GFSqBZaYWHlRZEMkdsvdD8jmHsxdGIcZ7kdZcy0bWxFaV5mXeTOKhvC43BprrPpdAsTSCE5AWWcPpqdgyLERPLhJC2pSe4GGIiJ_lMSCwbkZddGtyGMvstnP1Dm2c3g7aYwFJyBihFe8qQpW4itpCgD50JlQmlKQ7O9pGMw"/><div class="flex flex-col"><span class="text-sm font-headline font-bold tracking-tight text-on-surface leading-tight">AuraWash</span><span class="text-[11px] font-label text-primary tracking-wide font-medium leading-tight">Laundry OS</span></div></div><div class="px-4 py-4"><div class="p-3 rounded-xl bg-surface-container/60 backdrop-blur-md flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><div class="flex flex-col"><span class="text-[10px] uppercase font-label tracking-wider text-on-surface-variant font-semibold">Active Shift</span><span class="text-xs font-medium text-on-surface">Shift Pagi: Budi S.</span></div></div><span class="text-[10px] px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-semibold">LIVE</span></div></div><nav class="flex flex-col gap-1.5 px-3" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-[0_0_20px_rgba(125,211,252,0.15)]"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kasir-pos-pesanan" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Kasir POS &amp; Pesanan</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="operasional-kurir" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Operasional &amp; Kurir</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="laporan-keuangan" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Laporan Keuangan</span></a></nav></div><div class="p-4 flex flex-col gap-3"><div class="p-3 rounded-xl bg-surface-container-low/70 backdrop-blur-xl flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[18px]">local_laundry_service</span></div><div class="flex flex-col"><span class="text-xs font-semibold text-on-surface">Mesin Aktif</span><span class="text-[11px] text-on-surface-variant">14 / 16 Siap Pakai</span></div></div><span class="w-2 h-2 rounded-full bg-primary"></span></div><div class="px-2 py-1 text-center"><span class="text-[11px] text-on-surface-variant font-label tracking-tight">© 2024 AuraWash Platform</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-dim/75 backdrop-blur-2xl z-40 px-6 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-4"><div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface transition-all cursor-pointer"><span class="material-symbols-outlined text-[18px] text-primary">storefront</span><div class="flex flex-col text-left"><span class="text-xs font-semibold text-on-surface leading-tight">Cabang Utama - Senopati (HQ)</span><span class="text-[10px] text-primary font-medium leading-tight">Ganti Cabang</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant ml-1">expand_more</span></div><div class="relative w-80 lg:w-96"><span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full h-9 pl-10 pr-4 rounded-xl bg-surface-container-lowest/70 text-xs text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary/40 transition-all" placeholder="Cari No. Nota, Nama Pelanggan, atau No. Resi..." type="text"/></div></div><div class="flex items-center gap-4"><button class="h-9 px-4 rounded-xl bg-primary text-on-primary font-semibold text-xs flex items-center gap-1.5 shadow-[0_0_20px_rgba(125,211,252,0.25)] hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all"><span class="material-symbols-outlined text-[18px]">add</span><span>+ Pesanan Baru</span></button><div class="relative"><button class="w-9 h-9 rounded-xl bg-surface-container/60 hover:bg-surface-container-high hover:text-on-surface text-on-surface-variant flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface-dim"></span></div><div class="h-6 w-[1px] bg-outline-variant/60"></div><div class="flex items-center gap-2.5 pl-1 cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-primary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKLr7xmCndgtSaggUrdJukhhawnoNBXizM528-sV3CbrQ4AVD_gtNZLOUc87zkqJsMTf2d7WtMAONjIFkga2ZPNxfkcAScSNEOSkae_Tq3EnwVTIAWnlESKCeV9Euqnm479BbxHmTZKLWADrJ0UsFugcEDP_UCBBjwQvUKF_Aot9vcCJ0NqDfv0CDLcsLG6h5S9LZ02RHdrimfaNIHy2VJlX6fRu4g8IGrpupxmnN9GItPQdshX-BV"/><div class="hidden xl:flex flex-col text-left"><span class="text-xs font-semibold text-on-surface leading-tight">Budi Santoso</span><span class="text-[11px] text-on-surface-variant leading-tight">Outlet Manager</span></div></div></div></header><main class="w-full pt-16 bg-background px-8 min-h-screen"><div class="flex flex-col w-full pb-12">
+<!-- Top Meta & Quick Status Strip -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container/60 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<span class="text-xs font-semibold text-on-surface">Kasir POS POS-01</span>
+<span class="text-[10px] text-on-surface-variant">• Senopati Central</span>
+</div>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container/40">
+<span class="material-symbols-outlined text-secondary text-[16px]">scale</span>
+<span class="text-xs text-on-surface-variant font-label">Timbangan Bluetooth: <span class="text-primary font-medium">Terhubung (4.50 kg)</span></span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-xl bg-surface-container/70 hover:bg-surface-container-high text-on-surface text-xs font-medium flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px] text-tertiary">history</span>
+<span>Riwayat Transaksi Hari Ini</span>
+</button>
+<button class="px-3 py-1.5 rounded-xl bg-surface-container/70 hover:bg-surface-container-high text-on-surface text-xs font-medium flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px] text-primary">qr_code_scanner</span>
+<span>Scan Barcode Member</span>
+</button>
+</div>
+</div>
+<!-- Main POS Split Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start">
+<!-- Left / Center Column: Customer & Service Catalog (Cols 7) -->
+<div class="xl:col-span-7 flex flex-col gap-5">
+<!-- Customer Selection Card (Glass Panel) -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-low/75 backdrop-blur-2xl p-5 shadow-[0_4px_24px_rgba(0,0,0,0.25)]">
+<div class="absolute -right-12 -top-12 w-44 h-44 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between gap-4 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">person_search</span>
+<span class="text-xs uppercase font-label tracking-widest text-on-surface-variant font-semibold">Pelanggan Aktif</span>
+</div>
+<button class="text-xs text-primary hover:text-primary-fixed font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person_add</span>
+<span>+ Tambah Baru</span>
+</button>
+</div>
+<!-- Autocomplete Bar -->
+<div class="relative mb-3">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-11 pl-11 pr-10 rounded-xl bg-surface-container-lowest/80 text-sm font-medium text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary/50 shadow-inner" placeholder="Ketik nama / no. telepon / barcode member..." type="text" value="Siti Rahmawati (+62 812-3456-7890)"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Selected Customer Quick Info Card -->
+<div class="rounded-xl bg-surface-container/60 p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container/80 flex items-center justify-center text-primary font-bold text-sm shadow-inner">
+              SR
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="text-sm font-semibold text-on-surface">Siti Rahmawati</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/60 text-tertiary text-[10px] font-semibold tracking-wide">MEMBER GOLD</span>
+</div>
+<span class="text-xs text-on-surface-variant flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">call</span> +62 812-3456-7890
+                <span class="text-outline">•</span>
+<span class="material-symbols-outlined text-[14px]">location_on</span> Jl. Senopati No. 42 (1.8 km)
+              </span>
+</div>
+</div>
+<div class="flex sm:flex-col items-end justify-between w-full sm:w-auto bg-surface-container-lowest/50 sm:bg-transparent p-2 sm:p-0 rounded-lg">
+<span class="text-[10px] font-label text-on-surface-variant uppercase">Reward Loyalitas</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]">stars</span>
+<span class="text-xs font-bold text-on-surface">240 Poin</span>
+<span class="text-[11px] text-primary">(Rp 24.000)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Categories Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-semibold text-xs whitespace-nowrap shadow-[0_0_16px_rgba(125,211,252,0.25)] flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">view_module</span>
+          Semua Layanan
+        </button>
+<button class="px-4 py-2 rounded-xl bg-surface-container/70 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-xs font-medium whitespace-nowrap flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">scale</span>
+          Kiloan
+        </button>
+<button class="px-4 py-2 rounded-xl bg-surface-container/70 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-xs font-medium whitespace-nowrap flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">bed</span>
+          Satuan &amp; Bedcover
+        </button>
+<button class="px-4 py-2 rounded-xl bg-surface-container/70 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-xs font-medium whitespace-nowrap flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">dry_cleaning</span>
+          Dry Cleaning
+        </button>
+<button class="px-4 py-2 rounded-xl bg-surface-container/70 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-xs font-medium whitespace-nowrap flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">roller_skating</span>
+          Sepatu &amp; Tas
+        </button>
+<button class="px-4 py-2 rounded-xl bg-surface-container/70 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-xs font-medium whitespace-nowrap flex items-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">curtains</span>
+          Karpet &amp; Gorden
+        </button>
+</div>
+<!-- Service Catalog Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+<!-- Card 1: Cuci Kering Setrika (Active / In Cart) -->
+<div class="group relative rounded-2xl bg-surface-container-low/80 backdrop-blur-xl p-4 flex flex-col justify-between shadow-sm hover:shadow-[0_4px_20px_rgba(125,211,252,0.12)] transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-xl bg-primary-container/60 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">local_laundry_service</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">2 Hari</span>
+</div>
+<div class="mt-3">
+<h4 class="text-sm font-semibold text-on-surface leading-snug">Kiloan Cuci Kering Setrika</h4>
+<span class="text-xs text-on-surface-variant mt-0.5 block">Reguler 48 Jam • Higienis</span>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm font-bold text-primary font-headline">Rp 9.000</span>
+<span class="text-[11px] text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/80 rounded-lg p-1">
+<button class="w-6 h-6 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center text-xs transition-colors">-</button>
+<span class="text-xs font-bold text-on-surface w-7 text-center">4.5</span>
+<button class="w-6 h-6 rounded-md bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold transition-colors">+</button>
+</div>
+<span class="text-xs font-semibold text-on-surface">Rp 40.500</span>
+</div>
+</div>
+<!-- Card 2: Express 6 Jam -->
+<div class="group relative rounded-2xl bg-surface-container-low/80 backdrop-blur-xl p-4 flex flex-col justify-between shadow-sm hover:shadow-[0_4px_20px_rgba(125,211,252,0.12)] transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-xl bg-primary-container/40 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 rounded-full bg-tertiary-container/80 text-tertiary font-semibold">Express 6 Jam</span>
+</div>
+<div class="mt-3">
+<h4 class="text-sm font-semibold text-on-surface leading-snug">Kiloan Express 6 Jam</h4>
+<span class="text-xs text-on-surface-variant mt-0.5 block">Prioritas Mesin Utama</span>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm font-bold text-primary font-headline">Rp 18.000</span>
+<span class="text-[11px] text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-end">
+<button class="w-full h-8 rounded-xl bg-surface-container/70 hover:bg-primary-container hover:text-on-primary-container text-on-surface text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Tambah
+            </button>
+</div>
+</div>
+<!-- Card 3: Bedcover King Size (In Cart) -->
+<div class="group relative rounded-2xl bg-surface-container-low/80 backdrop-blur-xl p-4 flex flex-col justify-between shadow-sm hover:shadow-[0_4px_20px_rgba(125,211,252,0.12)] transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/70 text-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">bed</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Satuan</span>
+</div>
+<div class="mt-3">
+<h4 class="text-sm font-semibold text-on-surface leading-snug">Cuci Bedcover King Size</h4>
+<span class="text-xs text-on-surface-variant mt-0.5 block">Termasuk Tas Khusus</span>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm font-bold text-primary font-headline">Rp 35.000</span>
+<span class="text-[11px] text-on-surface-variant">/ pcs</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest/80 rounded-lg p-1">
+<button class="w-6 h-6 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center text-xs transition-colors">-</button>
+<span class="text-xs font-bold text-on-surface w-6 text-center">1</span>
+<button class="w-6 h-6 rounded-md bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold transition-colors">+</button>
+</div>
+<span class="text-xs font-semibold text-on-surface">Rp 35.000</span>
+</div>
+</div>
+<!-- Card 4: Jas & Blazer Premium Dry Clean -->
+<div class="group relative rounded-2xl bg-surface-container-low/80 backdrop-blur-xl p-4 flex flex-col justify-between shadow-sm hover:shadow-[0_4px_20px_rgba(125,211,252,0.12)] transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">dry_cleaning</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-semibold">Dry Clean</span>
+</div>
+<div class="mt-3">
+<h4 class="text-sm font-semibold text-on-surface leading-snug">Jas &amp; Blazer Premium</h4>
+<span class="text-xs text-on-surface-variant mt-0.5 block">Solvent ramah serat wol</span>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm font-bold text-primary font-headline">Rp 45.000</span>
+<span class="text-[11px] text-on-surface-variant">/ pcs</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-end">
+<button class="w-full h-8 rounded-xl bg-surface-container/70 hover:bg-primary-container hover:text-on-primary-container text-on-surface text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Tambah
+            </button>
+</div>
+</div>
+<!-- Card 5: Sneaker Deep Clean & Unyellowing -->
+<div class="group relative rounded-2xl bg-surface-container-low/80 backdrop-blur-xl p-4 flex flex-col justify-between shadow-sm hover:shadow-[0_4px_20px_rgba(125,211,252,0.12)] transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/50 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">roller_skating</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">Sepatu</span>
+</div>
+<div class="mt-3">
+<h4 class="text-sm font-semibold text-on-surface leading-snug">Sneaker Deep Clean</h4>
+<span class="text-xs text-on-surface-variant mt-0.5 block">Anti-bakteri + Unyellowing</span>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm font-bold text-primary font-headline">Rp 55.000</span>
+<span class="text-[11px] text-on-surface-variant">/ pasang</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-end">
+<button class="w-full h-8 rounded-xl bg-surface-container/70 hover:bg-primary-container hover:text-on-primary-container text-on-surface text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Tambah
+            </button>
+</div>
+</div>
+<!-- Card 6: Kemeja Satuan Hanger -->
+<div class="group relative rounded-2xl bg-surface-container-low/80 backdrop-blur-xl p-4 flex flex-col justify-between shadow-sm hover:shadow-[0_4px_20px_rgba(125,211,252,0.12)] transition-all">
+<div class="flex items-start justify-between gap-2">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">checkroom</span>
+</div>
+<span class="text-[10px] px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-semibold">Satuan</span>
+</div>
+<div class="mt-3">
+<h4 class="text-sm font-semibold text-on-surface leading-snug">Kemeja Satuan Hanger</h4>
+<span class="text-xs text-on-surface-variant mt-0.5 block">Steam Press &amp; Plastic Cover</span>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="text-sm font-bold text-primary font-headline">Rp 12.000</span>
+<span class="text-[11px] text-on-surface-variant">/ pcs</span>
+</div>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-end">
+<button class="w-full h-8 rounded-xl bg-surface-container/70 hover:bg-primary-container hover:text-on-primary-container text-on-surface text-xs font-semibold flex items-center justify-center gap-1.5 transition-all">
+<span class="material-symbols-outlined text-[16px]">add</span>
+              Tambah
+            </button>
+</div>
+</div>
+</div>
+<!-- Item Customization & Workshop Instructions -->
+<div class="rounded-2xl bg-surface-container-low/75 backdrop-blur-2xl p-5 shadow-[0_4px_24px_rgba(0,0,0,0.2)]">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="text-xs uppercase font-label tracking-widest text-on-surface font-semibold">Kustomisasi Pesanan Aktif</span>
+</div>
+<span class="text-[11px] text-primary font-medium">Layanan Terpilih: Cuci Kering Setrika</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-5">
+<!-- Weight Input (Cols 4) -->
+<div class="md:col-span-4 flex flex-col gap-1.5">
+<label class="text-xs font-medium text-on-surface-variant flex items-center justify-between">
+<span>Berat Timbangan (Kg)</span>
+<span class="text-[10px] text-primary">Sinkron Scale</span>
+</label>
+<div class="relative">
+<input class="w-full h-11 px-3.5 rounded-xl bg-surface-container-lowest/90 text-lg font-bold text-primary focus:outline-none focus:ring-1 focus:ring-primary font-headline tracking-wide" step="0.1" type="number" value="4.5"/>
+<span class="absolute right-3.5 top-1/2 -translate-y-1/2 text-xs font-semibold text-on-surface-variant">KG</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1">
+<button class="px-2 py-1 rounded-lg bg-surface-container text-[11px] font-medium text-on-surface-variant hover:text-on-surface">+0.5</button>
+<button class="px-2 py-1 rounded-lg bg-surface-container text-[11px] font-medium text-on-surface-variant hover:text-on-surface">+1.0</button>
+<button class="px-2 py-1 rounded-lg bg-surface-container text-[11px] font-medium text-on-surface-variant hover:text-on-surface">Reset</button>
+</div>
+</div>
+<!-- Fragrance Selector (Cols 8) -->
+<div class="md:col-span-8 flex flex-col gap-1.5">
+<label class="text-xs font-medium text-on-surface-variant">Pilihan Aroma Parfum Laundry</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<button class="p-2.5 rounded-xl bg-primary-container text-on-primary-container text-xs font-medium text-left flex flex-col justify-between shadow-[0_0_12px_rgba(125,211,252,0.15)]">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+<span class="mt-1 font-semibold leading-tight">Ocean Fresh</span>
+<span class="text-[10px] opacity-80">Default</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container/60 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-xs font-medium text-left flex flex-col justify-between transition-all">
+<span class="material-symbols-outlined text-[16px]">spa</span>
+<span class="mt-1 font-semibold leading-tight">Lavender Classic</span>
+<span class="text-[10px] opacity-60">Calming</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container/60 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-xs font-medium text-left flex flex-col justify-between transition-all">
+<span class="material-symbols-outlined text-[16px]">local_florist</span>
+<span class="mt-1 font-semibold leading-tight">Sakura Blossom</span>
+<span class="text-[10px] opacity-60">Sweet Floral</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container/60 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface text-xs font-medium text-left flex flex-col justify-between transition-all">
+<span class="material-symbols-outlined text-[16px]">child_care</span>
+<span class="mt-1 font-semibold leading-tight">Baby Soft</span>
+<span class="text-[10px] opacity-60">Hypoallergenic</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Warning Tags & Special Wash Notes -->
+<div class="mt-4 pt-3 flex flex-col gap-2">
+<label class="text-xs font-medium text-on-surface-variant">Catatan Operasional &amp; Instruksi Khusus (Tagging)</label>
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-highest text-primary text-xs font-medium flex items-center gap-1.5 cursor-pointer hover:bg-primary-container hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-[14px]">label</span>
+              Noda Kerah Baju Putih
+              <span class="material-symbols-outlined text-[14px]">close</span>
+</span>
+<span class="px-2.5 py-1 rounded-lg bg-error-container/60 text-error text-xs font-medium flex items-center gap-1.5 cursor-pointer">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+              Pakaian Mudah Luntur (Pisahkan)
+              <span class="material-symbols-outlined text-[14px]">close</span>
+</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant text-xs font-medium flex items-center gap-1 cursor-pointer hover:text-on-surface">
+<span class="material-symbols-outlined text-[14px]">check</span>
+              Kancing Kemeja Lepas 1
+            </span>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container/50 hover:bg-surface-container text-on-surface text-xs font-medium flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[14px]">add</span>
+              Tambah Catatan Lain...
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Cart, Billing Summary & Checkout (Cols 5) -->
+<div class="xl:col-span-5 flex flex-col gap-5">
+<!-- Cart & Billing Card -->
+<div class="rounded-2xl bg-surface-container-low/85 backdrop-blur-2xl p-5 shadow-[0_8px_32px_rgba(0,0,0,0.35)] flex flex-col">
+<!-- Struk Header Meta -->
+<div class="pb-4 mb-4 flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="text-xs uppercase font-label tracking-widest text-primary font-bold">Billing Cart</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-[11px] font-mono font-bold">#AW-2025-0894</span>
+</div>
+<span class="text-xs text-on-surface-variant mt-1">Estimasi Selesai: <strong class="text-on-surface font-semibold">Besok, 16:00 WIB</strong></span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-error transition-colors" title="Kosongkan Keranjang">
+<span class="material-symbols-outlined text-[18px]">delete_sweep</span>
+</button>
+</div>
+</div>
+<!-- Order Items List -->
+<div class="flex flex-col gap-3 max-h-64 overflow-y-auto pr-1">
+<!-- Item 1: Cuci Kering Setrika 4.5kg -->
+<div class="p-3 rounded-xl bg-surface-container/50 flex items-start justify-between gap-3">
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-on-surface">Kiloan Cuci Kering Setrika</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5">4.5 kg × Rp 9.000 • Aroma: Ocean Fresh</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-surface-container-highest text-primary">Noda Kerah</span>
+<span class="text-[10px] px-1.5 py-0.5 rounded bg-error-container/70 text-error">Pisahkan Luntur</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-xs font-bold text-on-surface font-headline">Rp 40.500</span>
+<button class="text-[11px] text-on-surface-variant hover:text-error mt-1 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Bedcover King Size -->
+<div class="p-3 rounded-xl bg-surface-container/50 flex items-start justify-between gap-3">
+<div class="flex flex-col">
+<span class="text-xs font-semibold text-on-surface">Cuci Bedcover King Size</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5">1 pcs × Rp 35.000 • Packaging Bag</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="text-xs font-bold text-on-surface font-headline">Rp 35.000</span>
+<button class="text-[11px] text-on-surface-variant hover:text-error mt-1 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Delivery & Pickup Mode Switch -->
+<div class="mt-4 pt-4">
+<label class="text-xs font-medium text-on-surface-variant mb-2 block">Metode Penyerahan Laundry</label>
+<div class="grid grid-cols-2 gap-2">
+<label class="cursor-pointer">
+<input class="sr-only peer" name="pickup_mode" type="radio"/>
+<div class="p-2.5 rounded-xl bg-surface-container/40 peer-checked:bg-primary-container peer-checked:text-on-primary-container text-on-surface-variant hover:text-on-surface text-xs font-medium flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined text-[16px]">store</span>
+<span>Ambil di Outlet</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="sr-only peer" name="pickup_mode" type="radio"/>
+<div class="p-2.5 rounded-xl bg-surface-container/40 peer-checked:bg-primary-container peer-checked:text-on-primary-container text-on-surface-variant hover:text-on-surface text-xs font-medium flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>Antar ke Rumah (+10rb)</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Loyalty Points & Voucher Coupon -->
+<div class="mt-3 p-3 rounded-xl bg-surface-container-lowest/60 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container focus:ring-0 focus:ring-offset-0 cursor-pointer" id="pointRedeem" type="checkbox"/>
+<label class="text-xs text-on-surface cursor-pointer select-none" for="pointRedeem">
+              Tukar <strong class="text-tertiary">200 Poin</strong> Gold Reward
+            </label>
+</div>
+<span class="text-xs font-semibold text-tertiary">-Rp 20.000</span>
+</div>
+<!-- Calculation Matrix -->
+<div class="mt-4 pt-3 flex flex-col gap-1.5 text-xs text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Subtotal Layanan (2 Item)</span>
+<span class="font-medium text-on-surface">Rp 75.500</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Biaya Kirim / Kurir Ekspedisi</span>
+<span class="font-medium text-on-surface">Rp 10.000</span>
+</div>
+<div class="flex items-center justify-between text-tertiary">
+<span>Diskon Poin Loyalitas</span>
+<span>-Rp 20.000</span>
+</div>
+<div class="mt-2 pt-2 flex items-baseline justify-between">
+<span class="text-sm font-semibold text-on-surface">Total Akhir Pembayaran</span>
+<div class="flex items-baseline gap-1">
+<span class="text-xl font-bold text-primary font-headline tracking-tight">Rp 65.500</span>
+</div>
+</div>
+</div>
+<!-- Payment Method Tabs -->
+<div class="mt-5">
+<label class="text-xs font-medium text-on-surface-variant mb-2 block">Pilih Pembayaran</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<button class="p-2 rounded-xl bg-surface-container/60 hover:bg-surface-container-high text-on-surface text-xs font-medium flex flex-col items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[18px] text-primary">payments</span>
+<span>Tunai / Cash</span>
+</button>
+<button class="p-2 rounded-xl bg-primary-container text-on-primary-container text-xs font-semibold flex flex-col items-center gap-1 shadow-[0_0_12px_rgba(125,211,252,0.2)]">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+<span>QRIS Auto</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container/60 hover:bg-surface-container-high text-on-surface text-xs font-medium flex flex-col items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[18px] text-tertiary">account_balance</span>
+<span>Transfer Bank</span>
+</button>
+<button class="p-2 rounded-xl bg-surface-container/60 hover:bg-surface-container-high text-on-surface text-xs font-medium flex flex-col items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">pending_actions</span>
+<span>Bayar Saat Ambil</span>
+</button>
+</div>
+</div>
+<!-- Primary Action Trigger Group -->
+<div class="mt-5 flex flex-col gap-2.5">
+<!-- Big Cashier Print Button -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-bold text-sm flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(125,211,252,0.35)] hover:bg-primary-fixed-dim transition-all active:scale-[0.99]">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span>Bayar &amp; Cetak Struk Thermal (Enter)</span>
+</button>
+<!-- WhatsApp Digital Receipt Button -->
+<div class="grid grid-cols-2 gap-2">
+<button class="h-10 rounded-xl bg-secondary-container hover:bg-secondary-container/80 text-on-secondary-container text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Kirim Nota WhatsApp</span>
+</button>
+<button class="h-10 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-semibold flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">drafts</span>
+<span>Simpan Draft Nota</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Operational Metrics (Mini Bento Tile) -->
+<div class="grid grid-cols-2 gap-3">
+<div class="rounded-xl bg-surface-container-low/60 backdrop-blur-xl p-3.5 flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant font-label uppercase">Kapasitas Dryer</span>
+<span class="text-xs font-bold text-on-surface">6/8 Mesin Siap</span>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-low/60 backdrop-blur-xl p-3.5 flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant font-label uppercase">SLA Tepat Waktu</span>
+<span class="text-xs font-bold text-on-surface">99.2% Bulan Ini</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for loyalty checkbox toggle simulation
+  document.addEventListener('DOMContentLoaded', () => {
+    const pointCheckbox = document.getElementById('pointRedeem');
+    if(pointCheckbox) {
+      pointCheckbox.addEventListener('change', (e) => {
+        // Toggle visual feedback
+      });
+    }
+  });
+</script></main></div><div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-md overflow-y-auto" id="receipt-modal-overlay"><div class="relative w-full max-w-5xl rounded-2xl bg-surface-container-low/95 border border-primary/30 shadow-[0_8px_32px_rgba(0,0,0,0.55)] p-6 my-8 backdrop-blur-2xl flex flex-col gap-5 text-on-surface"><div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-outline-variant/60"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary-container/70 flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">receipt_long</span></div><div><div class="flex items-center gap-2.5"><h3 class="text-lg font-bold font-headline text-on-surface">Pratinjau Struk &amp; Nota Digital</h3><span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary text-xs font-mono font-bold">#AW-2025-0894</span><span class="px-2 py-0.5 rounded-full bg-tertiary-container/60 text-tertiary text-[10px] font-semibold">MEMBER GOLD</span></div><p class="text-xs text-on-surface-variant mt-0.5">Pelanggan: <span class="text-on-surface font-semibold">Siti Rahmawati</span> • +62 812-3456-7890 • Kasir: Budi Santoso</p></div></div><div class="flex items-center gap-3"><div class="flex items-center bg-surface-container-highest rounded-xl p-1"><button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container text-xs font-semibold flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[16px]">print</span><span>Struk Thermal (80mm)</span></button><button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface text-xs font-medium flex items-center gap-1.5 transition-colors"><span class="material-symbols-outlined text-[16px]">chat</span><span>WhatsApp Digital</span></button></div><button class="w-9 h-9 rounded-xl bg-surface-container/80 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="document.getElementById('receipt-modal-overlay').remove()"><span class="material-symbols-outlined text-[20px]">close</span></button></div></div><div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start"><div class="lg:col-span-6 flex flex-col items-center"><div class="flex items-center justify-between w-full max-w-[340px] mb-2 px-1 text-xs text-on-surface-variant"><span class="flex items-center gap-1 font-medium"><span class="material-symbols-outlined text-[15px] text-primary">point_of_sale</span> Kertas Thermal 80mm</span><span class="text-[11px] text-secondary">Zoom: 100%</span></div><div class="w-full max-w-[340px] bg-[#f8fafc] text-[#0f172a] rounded-t-xl p-5 shadow-2xl font-mono text-[11px] leading-relaxed relative selection:bg-sky-200 selection:text-slate-900 border-x border-t border-slate-300"><div class="text-center pb-3 border-b border-dashed border-slate-400"><div class="flex items-center justify-center gap-1.5 mb-1"><span class="material-symbols-outlined text-sky-700 text-[22px]">local_laundry_service</span><h4 class="text-sm font-bold tracking-tight text-slate-900 uppercase">AURAWASH LAUNDRY</h4></div><p class="text-[10px] text-slate-600">Cabang Utama Senopati (HQ)</p><p class="text-[9px] text-slate-500">Jl. Senopati No. 88, Jakarta Selatan • 021-5550192</p></div><div class="py-2.5 border-b border-dashed border-slate-400 text-[10px] space-y-0.5 text-slate-700"><div class="flex justify-between"><span>No. Nota:</span><span class="font-bold text-slate-900">#AW-2025-0894</span></div><div class="flex justify-between"><span>Tanggal:</span><span>24 Okt 2024, 14:35</span></div><div class="flex justify-between"><span>Kasir / POS:</span><span>Budi S. / POS-01</span></div><div class="flex justify-between"><span>Pelanggan:</span><span class="font-semibold text-slate-900">Siti Rahmawati (GOLD)</span></div><div class="flex justify-between"><span>Est. Selesai:</span><span class="font-bold text-sky-800">25 Okt 2024, 16:00</span></div></div><div class="py-2.5 border-b border-dashed border-slate-400"><div class="font-bold text-[10px] uppercase text-slate-800 mb-1 flex justify-between"><span>ITEM / LAYANAN</span><span>TOTAL</span></div><div class="space-y-2 text-[10px]"><div><div class="flex justify-between font-semibold text-slate-900"><span>Kiloan Cuci Kering Setrika</span><span>40.500</span></div><div class="text-slate-600 text-[9px] flex justify-between"><span>4.50 kg x @9.000</span><span class="italic text-sky-700">Ocean Fresh</span></div><div class="text-[9px] text-slate-500">*Tag: Noda Kerah, Pisahkan Luntur</div></div><div><div class="flex justify-between font-semibold text-slate-900"><span>Cuci Bedcover King Size</span><span>35.000</span></div><div class="text-slate-600 text-[9px] flex justify-between"><span>1 pcs x @35.000</span><span>+ Tas Khusus</span></div></div></div></div><div class="py-2.5 border-b border-dashed border-slate-400 text-[10px] space-y-1 text-slate-700"><div class="flex justify-between"><span>Subtotal Layanan (2 item)</span><span>Rp 75.500</span></div><div class="flex justify-between"><span>Biaya Kirim (Kurir)</span><span>Rp 10.000</span></div><div class="flex justify-between text-slate-900 font-medium"><span>Tukar 200 Poin Loyalitas</span><span>-Rp 20.000</span></div><div class="flex justify-between text-xs font-bold text-slate-900 pt-1 border-t border-slate-300"><span>TOTAL TAGIHAN</span><span class="text-sky-900 font-bold">Rp 65.500</span></div><div class="flex justify-between text-[10px] text-slate-600"><span>Pembayaran (QRIS Auto)</span><span class="text-emerald-700 font-bold">LUNAS</span></div></div><div class="pt-3 pb-1 flex flex-col items-center text-center"><div class="p-1.5 bg-white border border-slate-300 rounded mb-1.5 shadow-sm"><img alt="QR Tracking" class="w-20 h-20 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7-GPKdj_R-70NsgYIQb1-TX5Yh8vnOP4Mf1dOr5e2O8OJKs5tlQ-Fag-F9Si3W-iTMokVAxM5IoQIjTa1crjT3Ub8gGOcbTb5wrPjaKSkJHhxbVAwKm4OoVA8Xn6mNAC8_XJ9NfJHJG78FpRSBLRnJdwjn7S90dRDiVJXyZXjXUy5OS_B30XeIkklTVb9wndxj-S3k-kk6WDfcF3Yj-49ce78fPAjES6AXe8wO6xlFoyty474g3x-"/></div><p class="text-[9px] font-bold tracking-wider text-slate-800">SCAN UNTUK CEK STATUS LAUNDRY</p><p class="text-[8px] text-slate-500 max-w-[230px] mt-0.5">Klaim kehilangan/kerusakan maks 24 jam dengan struk fisik ini. Pakaian higienis terjamin.</p><div class="mt-2 font-mono text-[9px] tracking-widest text-slate-400">* * * TERIMA KASIH * * *</div></div></div><div class="w-full max-w-[340px] h-3 bg-[#f8fafc] [mask-image:radial-gradient(circle_at_bottom,transparent_4px,#000_4px)] [mask-size:12px_12px] [mask-repeat:repeat-x] border-b-2 border-slate-300"></div></div><div class="lg:col-span-6 flex flex-col gap-3"><div class="flex items-center justify-between px-1 text-xs text-on-surface-variant"><span class="flex items-center gap-1.5 font-medium text-emerald-400"><span class="material-symbols-outlined text-[16px]">smartphone</span> WhatsApp Digital Receipt (Live Message)</span><span class="text-[11px] px-2 py-0.5 rounded bg-emerald-950/80 text-emerald-300 border border-emerald-500/30">Siap Dikirim</span></div><div class="rounded-2xl bg-[#0b141a] border border-[#1f2c34] p-4 shadow-xl flex flex-col justify-between min-h-[460px]"><div class="flex items-center justify-between pb-3 border-b border-[#202c33]"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-full bg-primary-container text-primary flex items-center justify-center font-bold text-xs"><span class="material-symbols-outlined text-[20px]">local_laundry_service</span></div><div><div class="flex items-center gap-1.5"><span class="text-xs font-semibold text-slate-200">AuraWash Laundry Official</span><span class="material-symbols-outlined text-[14px] text-emerald-400">verified</span></div><span class="text-[10px] text-slate-400">Official Business Account • Online</span></div></div><div class="flex items-center gap-2 text-slate-400"><span class="material-symbols-outlined text-[18px]">more_vert</span></div></div><div class="py-4 flex flex-col items-start"><div class="max-w-[92%] rounded-2xl rounded-tl-none bg-[#1f2c34] text-slate-100 p-3.5 shadow-md text-xs leading-relaxed font-body"><p class="text-slate-300 mb-1.5">Halo Kak <strong class="text-white">Siti Rahmawati</strong>! 👋✨</p><p class="text-slate-300 mb-2">Terima kasih telah mempercayakan laundry Anda di <strong class="text-primary">AuraWash (Cabang Senopati)</strong>. Pesanan Anda telah resmi terdaftar dan sedang diproses workshop kami.</p><div class="rounded-xl bg-[#111b21] p-3 border border-[#2a3942] my-2 text-[11px] font-mono space-y-1"><div class="text-primary font-bold pb-1 border-b border-[#222e35] flex justify-between"><span>NOTA: #AW-2025-0894</span><span>LUNAS (QRIS)</span></div><div class="pt-1 text-slate-300 flex justify-between"><span>• Kiloan Cuci Setrika (4.5kg)</span><span>Rp 40.500</span></div><div class="text-slate-300 flex justify-between"><span>• Cuci Bedcover King Size</span><span>Rp 35.000</span></div><div class="text-slate-400 flex justify-between"><span>• Ongkir Kurir &amp; Diskon Poin</span><span>-Rp 10.000</span></div><div class="pt-1 border-t border-[#222e35] text-xs font-bold text-white flex justify-between"><span>TOTAL AKHIR:</span><span class="text-emerald-400">Rp 65.500</span></div><div class="text-[10px] text-slate-400 mt-1">Aroma: Ocean Fresh | Est: Besok 16:00</div></div><p class="text-slate-300 mb-2 text-[11px]">Pantau progres pencucian secara real-time via live tracker:</p><div class="p-2.5 rounded-xl bg-surface-container-highest/60 border border-primary/20 flex items-center justify-between gap-2 mb-2"><div class="flex items-center gap-2 text-primary font-mono text-[11px] overflow-hidden truncate"><span class="material-symbols-outlined text-[16px]">link</span><span>https://aurawash.id/track/AW-2025-0894</span></div><span class="text-[10px] text-on-surface-variant">Klik</span></div><div class="flex items-center justify-between pt-1 border-t border-[#2a3942] text-[10px] text-slate-400"><span>AuraWash Laundry OS Bot</span><div class="flex items-center gap-1"><span>14:35</span><span class="material-symbols-outlined text-[14px] text-emerald-400">done_all</span></div></div></div></div><div class="pt-2 flex items-center justify-between gap-2 border-t border-[#202c33]"><div class="flex items-center gap-2 text-slate-400 text-xs"><span class="material-symbols-outlined text-[18px]">attach_file</span><span class="text-[11px]">PDF Struk Digital otomatis terlampir</span></div><button class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center gap-1.5 shadow transition-colors"><span class="material-symbols-outlined text-[16px]">send</span><span>Kirim Sekarang</span></button></div></div></div></div><div class="pt-4 border-t border-outline-variant/60 flex flex-wrap items-center justify-between gap-4"><div class="flex flex-wrap items-center gap-3"><div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container/70 border border-outline-variant/50 text-xs"><span class="material-symbols-outlined text-[18px] text-primary">print</span><div class="flex flex-col"><span class="text-[10px] text-on-surface-variant font-medium">Printer Kasir</span><span class="text-xs font-semibold text-on-surface">Epson TM-T82X (Thermal 80mm - USB)</span></div><span class="ml-2 px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[10px] font-semibold">Siap</span></div><div class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container/70 border border-outline-variant/50 text-xs"><span class="text-on-surface-variant text-[11px]">Jumlah Rangkap:</span><button class="w-6 h-6 rounded bg-surface-container-high text-on-surface font-bold text-xs flex items-center justify-center hover:bg-primary hover:text-on-primary">1x</button><button class="w-6 h-6 rounded bg-primary-container text-on-primary-container font-bold text-xs flex items-center justify-center">2x</button></div></div><div class="flex items-center gap-2.5"><button class="h-10 px-4 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface text-xs font-semibold transition-colors" onclick="document.getElementById('receipt-modal-overlay').remove()">Tutup / Batal</button><button class="h-10 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center gap-2 transition-colors shadow-[0_0_16px_rgba(16,185,129,0.25)]"><span class="material-symbols-outlined text-[18px]">chat</span><span>Kirim Nota WA</span></button><button class="h-10 px-5 rounded-xl bg-primary text-on-primary text-xs font-bold flex items-center gap-2 shadow-[0_0_24px_rgba(125,211,252,0.35)] hover:bg-primary-fixed-dim transition-all active:scale-[0.99]"><span class="material-symbols-outlined text-[18px]">print</span><span>Cetak Struk Sekarang (Enter)</span></button></div></div></div></div></body></html>
