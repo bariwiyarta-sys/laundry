@@ -1,12 +1,11 @@
-import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Sidebar() {
-  const [active, setActive] = useState('dashboard')
   const navItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: 'space_dashboard' },
-    { id: 'kasir-pos-pesanan', label: 'Kasir POS & Pesanan', icon: 'point_of_sale' },
-    { id: 'operasional-kurir', label: 'Operasional & Kurir', icon: 'local_shipping' },
-    { id: 'laporan-keuangan', label: 'Laporan Keuangan', icon: 'account_balance_wallet' },
+    { id: '/', label: 'Dashboard', icon: 'space_dashboard' },
+    { id: '/kasir', label: 'Kasir POS & Pesanan', icon: 'point_of_sale' },
+    { id: '/operasional', label: 'Operasional & Kurir', icon: 'local_shipping' },
+    { id: '/keuangan', label: 'Laporan Keuangan', icon: 'account_balance_wallet' },
   ]
 
   return (
@@ -37,18 +36,20 @@ export default function Sidebar() {
         </div>
         <nav className="flex flex-col gap-1.5 px-3">
           {navItems.map((item) => (
-            <button
+            <NavLink
               key={item.id}
-              onClick={() => setActive(item.id)}
-              className={`flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                active === item.id
-                  ? 'bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-[0_0_20px_rgba(125,211,252,0.15)]'
-                  : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface'
-              }`}
+              to={item.id}
+              className={({ isActive }) =>
+                `flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                  isActive
+                    ? 'bg-primary-container text-on-primary-container font-semibold rounded-xl shadow-[0_0_20px_rgba(125,211,252,0.15)]'
+                    : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface'
+                }`
+              }
             >
               <span className="material-symbols-outlined text-[20px]">{item.icon}</span>
               <span>{item.label}</span>
-            </button>
+            </NavLink>
           ))}
         </nav>
       </div>
